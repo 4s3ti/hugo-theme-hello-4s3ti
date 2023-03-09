@@ -1,7 +1,9 @@
 {{ range . -}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {{ if .icon }}
         <li><a href="{{ .url }}" class="icon {{ .icon }}" target="_blank" rel="noopener" title="{{ .name | humanize }}"></a></li>
     {{ else }}
         <li><a href="{{ .url }}" class="icon fa-brands fa-{{ .name }}" target="_blank" rel="noopener" title="{{ .name | humanize }}"></a></li>
     {{ end }}
 {{- end -}}
+

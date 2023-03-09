@@ -1,6 +1,7 @@
-baseURL = "https://example.com"
-title   = "Hello 4s3ti"
-languageCode = "en-us"
+baseURL = "https://tiagogiraldo.github.io"
+title   = "El Rincón de Tiago"
+name = "El Rincón de Tiago"
+languageCode = "es-ES"
 theme = "hello-4s3ti"
 
 PygmentsCodeFences = true
@@ -32,15 +33,15 @@ disableRSS     = false
 disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
-IsMultiLangual = false
-defaultContentLanguage = pt-pt
+IsMultiLangual = true
+defaultContentLanguage = "es"
 
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "Jane Doe"
+  name = "Santiago Giraldo"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -58,19 +59,19 @@ defaultContentLanguage = pt-pt
   
   # Metadata mostly used in document's head
   # 
-  description = "Nice theme for homepages and blogs"
-  keywords = ""
+  description = "Blog sobre IA, Machine Learning, Ciencia de Datos y Otras Cosas"
+  keywords = "AI, ML, Data Science, Python, Spark"
   images = [""]
 
   # Home page title
-  homeTitle = "hello 4s3ti"
+  homeTitle = "El Rincón de Tiago"
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Hello 4s3ti"
+  homeSubtitle = "Blog sobre IA, Machine Learning, Ciencia de Datos y Otras Cosas"
 
   # Set a background for the homepage
-  # backgroundImage = "assets/images/background.jpg"
+  backgroundImage = "images/ray-hennessy-9rloii_qmmw-unsplash.jpg" 
   
   # Adds a dark overlay over the background
   # backgroundEffects = false
@@ -138,7 +139,7 @@ defaultContentLanguage = pt-pt
 
   [params.footer]
     trademark = true
-    rss = true
+    rss = false
     copyright = true
     author = true
 
@@ -154,13 +155,13 @@ defaultContentLanguage = pt-pt
   # Colors for favicons
   #
   [params.favicon.color]
-    mask = "#1b1c1d"
-    msapplication = "#1b1c1d"
-    theme = "#1b1c1d"
-
+    mask = "#6d82bf"
+    msapplication = "#6d82bf"
+    theme = "#6d82bf"
+# "#1b1c1d"
   [params.logo]
-    logoMark     = ">"
-    logoText     = "$ cd /home/"
+    logoMark     = ""
+    logoText     = "El ricón de Tiago"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -177,7 +178,7 @@ defaultContentLanguage = pt-pt
   # A better internet.
   # Uncomment this to enable Commento.
   #
-  # [params.commento]
+  #[params.commento]
   #   url = ""
 
   # Uncomment this if you want a portrait on your start page
@@ -190,51 +191,66 @@ defaultContentLanguage = pt-pt
   # Social icons
   [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/"
+    icon = "fab fa-twitter"
+    url  = "https://twitter.com/un_X_mas"
+ 
 
-  [[params.social]]
-    name = "email"
-    url  = "mailto:nobody@example.com"
-    icon = "fa-solid fa-envelope"
+  #[[params.social]]
+  #  name = "email"
+  #  icon = "fa-solid fa-envelope"
+  #  url  = "mailto:sgmlmail@protonmail.com"
+    
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/"
+    icon = "fab fa-github"
+    url  = "https://github.com/tiagogiraldo"
 
   [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/"
+    icon = "fas fa-envelope"
+    title = "E-mail"
+    url = "mailto:mail@example.com"
 
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
 
 [languages]
-  [languages.en]
-    subtitle  = "Hello 4s3ti Theme"
+  [languages.es]
+    subtitle  = "El rincón"
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
-  [languages.fr]
-    subtitle  = "Hello 4s3ti Theme"
+  [languages.en]
+    subtitle  = "Corner"
     weight    = 2
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "about/"
-  [[menu.main]]
     identifier = "posts"
     name       = "Posts"
-    url        = "posts/"
+    url        = "/posts"
+    weight    = 1
   [[menu.main]]
-    identifier = "tools"
-    name       = "Tools"
-    url        = "#"
+    identifier = "projects"
+    name       = "Proyectos"
+    url        = "/projects"
+    weight    = 2
   [[menu.main]]
-    identifier = "sometool"
-    name       = "SomeTool"
-    url        = "#"
-    parent     = "tools"
+    identifier = "about"
+    name       = "Acerca"
+    url        = "/about"
+    weight    = 3
+
+  [[menu.icon]]
+    url = "mailto:me@example.com"
+    name = "envelope-o"
+    weight = 4
+
+  [[menu.icon]]
+    url = "https://github.com/username/"
+    name = "github"
+    weight = 5
+
+  [[menu.icon]]
+    url = "https://twitter.com/username/"
+    name = "twitter"
+    weight = 6

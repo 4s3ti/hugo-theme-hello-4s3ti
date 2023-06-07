@@ -32,8 +32,8 @@ disableRSS     = false
 disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
-IsMultiLangual = false
-defaultContentLanguage = pt-pt
+IsMultiLingual = false
+defaultContentLanguage = "en"
 
 
 [permalinks]
@@ -134,7 +134,7 @@ defaultContentLanguage = pt-pt
   # If you want, you can easily override the default footer with your own content. 
   #
   [params.fontAwesome]
-    KitURL = https://kit.fontawesome.com/KitID.js
+    KitURL = "https://kit.fontawesome.com/KitID.js"
 
   [params.footer]
     trademark = true
@@ -195,7 +195,7 @@ defaultContentLanguage = pt-pt
   [[params.social]]
     name = "email"
     url  = "mailto:nobody@example.com"
-    icon = fa-solid fa-envelope
+    icon = "fa-solid fa-envelope"
 
   [[params.social]]
     name = "github"
@@ -211,14 +211,15 @@ defaultContentLanguage = pt-pt
 
 [languages]
   [languages.en]
-    subtitle  = "Hello 4s3ti Theme"
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-
-  [languages.fr]
+  [languages.en.params]
     subtitle  = "Hello 4s3ti Theme"
+  [languages.fr]
     weight    = 2
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  [languages.fr.params]
+    subtitle  = "Hello 4s3ti Theme"
 
 [menu]
   [[menu.main]]

@@ -2,7 +2,7 @@
 
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
-![Hello Friend 4s3ti](images/Screenshot.png)
+![Hello Friend 4s3ti](images/screenshot.png)
 
 ## General informations
 
@@ -189,7 +189,7 @@ audio: path/to/file.mp3
 
 ## Social Icons:
 
-### FontAweome
+### FontAwesome
 
 To use the Social Media icons and the Share Icons you are required to have at least a free [FontAwesome](https://fontawesome.com) Icon Kit   
 

@@ -34,5 +34,5 @@ Temporary Items
 
 .vscode
 
-# customize Headers whiteout touch git submodule.
+# customize headers without touching git submodule.
 layouts/partials/extra-head.html
